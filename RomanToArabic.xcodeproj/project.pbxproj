@@ -14,6 +14,7 @@
 		CE5711071EFDCB3B00F84870 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5711051EFDCB3B00F84870 /* LaunchScreen.storyboard */; };
 		CE5711121EFDCB3B00F84870 /* RomanToArabicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5711111EFDCB3B00F84870 /* RomanToArabicTests.swift */; };
 		CE57111D1EFDCB3B00F84870 /* RomanToArabicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57111C1EFDCB3B00F84870 /* RomanToArabicUITests.swift */; };
+		CE57112B1EFDCB5B00F84870 /* RomanNumeralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57112A1EFDCB5B00F84870 /* RomanNumeralModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CE5711181EFDCB3B00F84870 /* RomanToArabicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanToArabicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE57111C1EFDCB3B00F84870 /* RomanToArabicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToArabicUITests.swift; sourceTree = "<group>"; };
 		CE57111E1EFDCB3B00F84870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE57112A1EFDCB5B00F84870 /* RomanNumeralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomanNumeralModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				CE5711031EFDCB3B00F84870 /* Assets.xcassets */,
 				CE5711051EFDCB3B00F84870 /* LaunchScreen.storyboard */,
 				CE5711081EFDCB3B00F84870 /* Info.plist */,
+				CE57112A1EFDCB5B00F84870 /* RomanNumeralModel.swift */,
 			);
 			path = RomanToArabic;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE57112B1EFDCB5B00F84870 /* RomanNumeralModel.swift in Sources */,
 				CE5710FF1EFDCB3B00F84870 /* ViewController.swift in Sources */,
 				CE5710FD1EFDCB3B00F84870 /* AppDelegate.swift in Sources */,
 			);

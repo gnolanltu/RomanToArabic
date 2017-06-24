@@ -11,26 +11,31 @@ import XCTest
 
 class RomanToArabicTests: XCTestCase {
     
+    var testClass : RomanNumeral!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        testClass = RomanNumeral()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRoman() {
+        XCTAssertEqual(testClass?.toRoman(arabic: 1), "I","Unable to convert")
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testArabic() {
+        XCTAssertEqual(testClass?.toArabic(roman: "MLXVI"), 1066, "Unable to convert")
     }
-    
+    /*
+    XCTAssertEqual(testClass?.convertArabicToRoman(1), "I","Unable to convert")
+    XCTAssertEqual(testClass?.convertArabicToRoman(3), "III", "Unable to convert")
+    XCTAssertEqual(testClass?.convertArabicToRoman(9), "IX", "Unable to convert")
+    XCTAssertEqual(testClass?.convertArabicToRoman(1066), "MLXVI", "Unable to convert")
+    XCTAssertEqual(testClass?.convertArabicToRoman(1989), "MCMLXXXIX", "Unable to convert")
+    //Test case to validate negative number
+    XCTAssertEqual(testClass?.convertArabicToRoman(-1), "-1", "Negative number converted")
+    */
 }
